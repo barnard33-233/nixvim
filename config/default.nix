@@ -4,7 +4,7 @@
     # ./bufferline.nix
     ./autoclose.nix
     ./basics.nix
-    ./bufferline.nix
+    # ./bufferline.nix
     ./cmp.nix
     ./direnv.nix
     ./keymapping.nix

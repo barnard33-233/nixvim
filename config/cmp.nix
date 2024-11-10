@@ -8,7 +8,7 @@
           { name = "nvim_lsp"; }
           { name = "path"; }
           { name = "buffer"; }
-          { name = "luasnip"; }
+          # { name = "luasnip"; }
         ];
         mapping = {
           "<C-j>" = "cmp.mapping.select_next_item()";

@@ -21,6 +21,5 @@
     cmp-nvim-lsp.enable = true;
     cmp-path.enable = true;
     cmp-buffer.enable = true;
-    cmp_luasnip.enable = true;
   };
 }

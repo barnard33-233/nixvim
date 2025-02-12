@@ -7,6 +7,7 @@
     # ./bufferline.nix
     ./cmp.nix
     ./direnv.nix
+    ./gitsigns.nix
     ./keymapping.nix
     ./lsp.nix
     ./lspkind.nix

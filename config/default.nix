@@ -11,6 +11,7 @@
     ./keymapping.nix
     ./lsp.nix
     ./lspkind.nix
+    ./lspsaga.nix
     ./lualine.nix
     ./neoscroll.nix
     ./nvim-tree.nix

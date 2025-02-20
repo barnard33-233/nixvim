@@ -1,7 +1,6 @@
 {
   # Import all your configuration modules here
   imports = [
-    # ./bufferline.nix
     ./autoclose.nix
     ./basics.nix
     # ./bufferline.nix

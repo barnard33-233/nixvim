@@ -9,6 +9,11 @@
     { mode = ["n"]; key = "<leader>k"; action = "<c-w>k"; }
     { mode = ["n"]; key = "<leader>l"; action = "<c-w>l"; }
 
+    { mode = ["n"]; key = "<leader>,"; action = "<c-w><"; }
+    { mode = ["n"]; key = "<leader>-"; action = "<c-w>-"; }
+    { mode = ["n"]; key = "<leader>="; action = "<c-w>+"; }
+    { mode = ["n"]; key = "<leader>."; action = "<c-w>>"; }
+
     # tabs
     { mode = ["n"]; key = "<leader>tn"; action = ":tabnew<CR>";}
     { mode = ["n"]; key = "<leader>tj"; action = ":tabnext-<CR>";}

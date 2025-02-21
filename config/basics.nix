@@ -58,6 +58,15 @@
       };
     };
     extraConfigLua = ''
+      function fix_paste(reg)
+        return function(lines)
+          local content = vim.fn.getreg('"')
+          return vim.split(content, '\n')
+        end
+      end
+
+      if (os.getenv('SSH_TTY') ~= nil)
+      then
       vim.g.clipboard = {
         name = 'OSC 52',
         copy = {
@@ -65,10 +74,11 @@
           ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
         },
         paste = {
-          ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
-          ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+          ['+'] = fix_paste("+"),
+          ['*'] = fix_paste("*"),
         },
       }
+      end
     '';
   };
 

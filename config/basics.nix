@@ -2,6 +2,7 @@
 {
   config = {
     opts = {
+      exrc = true;
       # tab
       tabstop = 4;
       softtabstop = 4;
@@ -22,8 +23,6 @@
       hlsearch = false;
       ignorecase = true;
       smartcase = true;
-
-      exrc = true;
     };
     clipboard = {
       register = "unnamedplus";
@@ -79,7 +78,23 @@
         },
       }
       end
-    '';
+      vim.api.nvim_create_user_command(
+        "Chroot",
+        function(opts)
+          local tree_ok, tree_api = pcall(require, "nvim-tree.api")
+
+          if tree_ok then
+            NvimTreeChroot(tree_api, opts.args)
+          end
+
+          vim.api.nvim_set_current_dir(opts.args)
+        end,
+        {
+          nargs = "?",
+          complete = "dir",
+        }
+      )
+      '';
   };
 
 }

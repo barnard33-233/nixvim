@@ -21,4 +21,13 @@
       };
     }
   ];
+
+  extraConfigLua = ''
+    function NvimTreeChroot(api, path)
+        path = path or vim.fn.expand("~")
+        api.tree.change_root(path)
+        print("NvimTreeChroot: " .. path)
+    end
+
+  '';
 }

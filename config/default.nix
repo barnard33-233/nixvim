@@ -3,9 +3,10 @@
   imports = [
     ./autoclose.nix
     ./basics.nix
-    # ./bufferline.nix
+    ./bufferline.nix
     ./cmp.nix
     ./direnv.nix
+    ./filetype.nix
     ./gitsigns.nix
     ./keymapping.nix
     ./lsp.nix

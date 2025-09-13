@@ -6,7 +6,7 @@
 
   keymaps = [
     {
-      mode = [ "n" "i" ]; key = "<leader>ff";
+      mode = [ "n" ]; key = "<leader>ff";
       action = helpers.mkRaw ''
         function()
           require('telescope.builtin').find_files()
@@ -15,7 +15,7 @@
     }
 
     {
-      mode = [ "n" "i" ]; key = "<leader>fg";
+      mode = [ "n" ]; key = "<leader>fg";
       action = helpers.mkRaw ''
         function()
           require('telescope.builtin').live_grep()
@@ -24,10 +24,24 @@
     }
 
     {
-      mode = [ "n" "i" ]; key = "<leader>fh";
+      mode = [ "n" ]; key = "<leader>fh";
       action = helpers.mkRaw ''
         function()
           require('telescope.builtin').help_tags()
+        end
+      '';
+    }
+
+    {
+      mode = [ "n" ]; key = "<leader>fb";
+      action = ":Telescope buffers<CR>";
+    }
+
+    {
+      mode = [ "n" ]; key = "<leader>fm";
+      action = helpers.mkRaw ''
+        function()
+          require('telescope.builtin').keymaps()
         end
       '';
     }

@@ -13,6 +13,11 @@
       nixd = {
         enable = true;
       };
+      rust-analyzer = {
+        enable = true;
+        installCargo = false;
+        installRustc = false;
+      };
     };
 
     inlayHints = true;

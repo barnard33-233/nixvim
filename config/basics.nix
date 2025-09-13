@@ -78,6 +78,7 @@
         },
       }
       end
+
       vim.api.nvim_create_user_command(
         "Chroot",
         function(opts)

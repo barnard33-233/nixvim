@@ -19,7 +19,6 @@
     { mode = ["v"]; key = ">"; action = ">gv"; }
 
     # buffer
-    { mode = ["n"]; key = "<leader>n"; action = ":bnext<CR>"; }
-    { mode = ["n"]; key = "<leader>p"; action = ":bprevious<CR>"; }
+    { mode = ["n"]; key = "<leader>c"; action = ":bd<CR>"; }
   ];
 }

@@ -4,8 +4,19 @@
   };
   keymaps = [
     {
-      mode = ["n"]; key = "<leader>b";
-      action = ":BufferlineGoToBuffer";
+      mode = ["n"]; key = "<leader>bp";
+      action = ":BufferLinePick<CR>";
+    }
+    {
+      mode = ["n"]; key = "<leader>bc";
+      action = ":BufferLinePickClose<CR>";
+    }
+    { mode = ["n"]; key = "<leader>n";
+      action = ":BufferLineMoveNext<CR>";
+    }
+    {
+      mode = ["n"]; key = "<leader>p";
+      action = ":BufferLineMovePrev<CR>";
     }
   ];
 }

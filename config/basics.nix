@@ -23,6 +23,8 @@
       hlsearch = false;
       ignorecase = true;
       smartcase = true;
+
+      laststatus = 3;
     };
     clipboard = {
       register = "unnamedplus";

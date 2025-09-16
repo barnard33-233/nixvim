@@ -20,5 +20,7 @@
 
     # buffer
     { mode = ["n"]; key = "<leader>c"; action = ":bd<CR>"; }
+    { mode = ["n"]; key = "<leader>["; action = ":bprevious<CR>";}
+    { mode = ["n"]; key = "<leader>]"; action = ":bnext<CR>";}
   ];
 }

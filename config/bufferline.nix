@@ -11,11 +11,11 @@
       mode = ["n"]; key = "<leader>bc";
       action = ":BufferLinePickClose<CR>";
     }
-    { mode = ["n"]; key = "<leader>n";
+    { mode = ["n"]; key = "<leader>bn";
       action = ":BufferLineMoveNext<CR>";
     }
     {
-      mode = ["n"]; key = "<leader>p";
+      mode = ["n"]; key = "<leader>bp";
       action = ":BufferLineMovePrev<CR>";
     }
   ];

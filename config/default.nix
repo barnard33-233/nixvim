@@ -16,6 +16,7 @@
     ./neoscroll.nix
     ./nvim-tree.nix
     ./telescope.nix
+    ./web-devicons.nix
     ./whichkey.nix
   ];
 }

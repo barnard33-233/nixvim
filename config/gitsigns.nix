@@ -1,4 +1,4 @@
-{ helpers, ... }:
+{ lib, ... }:
 
 {
   plugins.gitsigns = {
@@ -10,7 +10,7 @@
     {
       mode = [ "n" ];
       key = "]h";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           if vim.wo.diff then
             vim.cmd.normal({']c', bang = true})
@@ -24,7 +24,7 @@
     {
       mode = [ "n" ];
       key = "[h";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           if vim.wo.diff then
             vim.cmd.normal({'[c', bang = true})
@@ -37,7 +37,7 @@
     {
       mode = [ "n" ];
       key = "<leader>gs";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         require("gitsigns").stage_buffer
       '';
       options = {
@@ -47,7 +47,7 @@
     {
       mode = [ "n" ];
       key = "<leader>gsh";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           require("gitsigns").stage_hunk({ vim.fn.line("."), vim.fn.line("v") })
         end
@@ -59,7 +59,7 @@
     {
       mode = [ "n" ];
       key = "<leader>gshd";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         require("gitsigns").undo_stage_hunk
       '';
       options = {
@@ -69,7 +69,7 @@
     {
       mode = [ "n" ];
       key = "<leader>gp";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         require("gitsigns").preview_hunk
       '';
       options = {

@@ -1,4 +1,4 @@
-{helpers, ...}:
+{lib, ...}:
 {
   plugins.neoscroll = {
     enable = true;
@@ -13,7 +13,7 @@
   keymaps = [
     {
       mode = ["n"];  key = "<C-u>";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           neoscroll.ctrl_u({ duration = 250 })
         end
@@ -22,7 +22,7 @@
 
     {
       mode = ["n"];  key = "<C-d>";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           neoscroll.ctrl_d({ duration = 250 })
         end
@@ -31,7 +31,7 @@
 
     {
       mode = ["n"]; key = "zz";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           neoscroll.zz({ half_win_duration = 250 })
         end
@@ -40,7 +40,7 @@
 
     {
       mode = ["n"]; key = "zt";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           neoscroll.zt({ half_win_duration = 250 })
         end
@@ -49,7 +49,7 @@
 
     {
       mode = ["n"]; key = "zb";
-      action = helpers.mkRaw ''
+      action = lib.nixvim.mkRaw ''
         function()
           neoscroll.zb({ half_win_duration = 250 })
         end

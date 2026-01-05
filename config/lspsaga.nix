@@ -1,8 +1,10 @@
-{pkgs, helpers, ...}:
+{pkgs, lib, ...}:
 {
   plugins.lspsaga = {
     enable = true;
-    lightbulb.enable = false;
+    settings = {
+      lightbulb.enable = false;
+    };
   };
   
   keymaps = [

@@ -1,13 +1,15 @@
 {
   plugins.nvim-tree = {
     enable = true;
-    git = {
-      enable = true;
-      ignore = false;
-    };
-    tab.sync = {
-      close = true;
-      open = true;
+    settings = {
+      git = {
+        enable = true;
+        ignore = false;
+      };
+      tab.sync = {
+        close = true;
+        open = true;
+      };
     };
   };
 

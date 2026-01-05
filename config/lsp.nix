@@ -72,13 +72,6 @@
     '';
   };
 
-  extraConfigLua = ''
-    require("lspconfig").asm_lsp.setup {
-      filetypes = { "asm", "s", "S" }
-    }
-    require("lspconfig").verible.setup { }
-  '';
-
   extraPlugins = with pkgs.vimPlugins; [
     lsp_signature-nvim
   ];

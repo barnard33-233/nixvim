@@ -6,6 +6,14 @@
     servers = {
       clangd = {
         enable = true;
+        cmd = [
+          "${pkgs.clang.cc}/bin/clangd"
+          "--query-driver=**"
+          "--enable-config"
+          "--background-index"
+          "--clang-tidy"
+          "--header-insertion=never"
+        ];
       };
       pyright = {
         enable = true;

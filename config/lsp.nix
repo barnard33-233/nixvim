@@ -83,10 +83,4 @@
   extraPlugins = with pkgs.vimPlugins; [
     lsp_signature-nvim
   ];
-
-  extraPackages = with pkgs; [
-    asm-lsp
-    verible
-  ];
-
 }

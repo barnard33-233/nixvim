@@ -12,7 +12,7 @@
     ./lsp.nix
     ./lspkind.nix
     ./lspsaga.nix
-    ./lualine.nix
+    # ./lualine.nix
     ./neoscroll.nix
     ./nvim-tree.nix
     ./telescope.nix

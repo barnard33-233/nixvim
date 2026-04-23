@@ -23,8 +23,12 @@
       };
       rust_analyzer = {
         enable = true;
+
+        # use rust-analyzer from env
+        package = null;
         installCargo = false;
         installRustc = false;
+        cmd = ["rust-analyzer"];
       };
     };
 

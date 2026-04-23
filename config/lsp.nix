@@ -29,6 +29,13 @@
         installCargo = false;
         installRustc = false;
         cmd = ["rust-analyzer"];
+        settings = {
+          cargo = {
+            allTargets = true;
+            features = "all";
+          };
+          check.features = "all";
+        };
       };
     };
 
